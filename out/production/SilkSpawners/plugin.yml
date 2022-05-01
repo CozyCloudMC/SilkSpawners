@@ -1,0 +1,6 @@
+name: SilkSpawner
+authors: [ChickenSaysBak, CozyCloud]
+version: 1.0
+main: me.CozyCloud.SilkSpawners.SilkSpawners
+commands:
+  spawner:
