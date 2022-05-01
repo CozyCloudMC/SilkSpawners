@@ -61,7 +61,7 @@ public class SpawnerUtils {
      * @return a properly formatted spawner name
      */
     public static String getSpawnerName(EntityType type) {
-        return ChatColor.YELLOW + WordUtils.capitalize(type.toString().replace("_", " ")) + " Spawner";
+        return ChatColor.YELLOW + WordUtils.capitalize(type.toString().toLowerCase().replace("_", " ")) + " Spawner";
     }
 
     /**
