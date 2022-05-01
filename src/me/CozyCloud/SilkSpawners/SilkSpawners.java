@@ -36,7 +36,6 @@ public class SilkSpawners extends JavaPlugin implements Listener {
                 if (args[0].equalsIgnoreCase("create")) {
 
                     String types = "";
-
                     for (EntityType type : EntityType.values()) types = types + type.toString() + ", ";
                     if (!types.isEmpty()) types = types.substring(0, types.length()-2);
 
