@@ -13,8 +13,16 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * All events for SilkSpawners.
+ */
 public class Events implements Listener {
 
+    /**
+     * Handles the functionality of spawners dropping when mined with a valid pickaxe.
+     * Spawner cannot be broken at all unless their pickaxe is valid. Experience orbs are never dropped.
+     * @param event BlockBreakEvent
+     */
     @EventHandler
     public void onMine(BlockBreakEvent event) {
 
@@ -38,6 +46,10 @@ public class Events implements Listener {
         }
     }
 
+    /**
+     * Handles the setting of a spawner's type when a valid spawner is placed.
+     * @param event BlockPlaceEvent
+     */
     @EventHandler
     public void onPlace(BlockPlaceEvent event) {
 

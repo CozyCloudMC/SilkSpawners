@@ -10,6 +10,9 @@ import org.bukkit.entity.Player;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Command used to give admins a valid spawner.
+ */
 public class SpawnerCommand implements TabExecutor {
 
     @Override
