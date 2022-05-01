@@ -19,6 +19,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class SilkSpawners extends JavaPlugin implements Listener {
 
+    //Cozy is short
+
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this);
