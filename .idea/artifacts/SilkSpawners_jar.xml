@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SilkSpawners:jar">
+    <output-path>$PROJECT_DIR$/../../Bak's Plugins/Bak's Spigot Plugins/Collab Plugins</output-path>
+    <root id="archive" name="SilkSpawners.jar">
+      <element id="module-output" name="SilkSpawners" />
+    </root>
+  </artifact>
+</component>
