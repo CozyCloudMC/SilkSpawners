@@ -28,7 +28,7 @@ public class SpawnerCommand implements TabExecutor {
 
                     try {
                         EntityType type = EntityType.valueOf(args[1].toUpperCase());
-                        player.getInventory().addItem(SpawnerUtils.getSpawner(type));
+                        SpawnerUtils.giveItemSafely(player, SpawnerUtils.getSpawner(type));
                         sender.sendMessage("Given " + SpawnerUtils.getSpawnerName(type));
                     } catch (IllegalArgumentException e) {
                         sender.sendMessage(ChatColor.DARK_RED + args[1].toUpperCase() + ChatColor.RED + " is an invalid type!");

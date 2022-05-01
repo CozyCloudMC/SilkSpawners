@@ -5,6 +5,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -77,6 +78,15 @@ public class SpawnerUtils {
         item.setItemMeta(itemMeta);
         return item;
 
+    }
+
+    /**
+     * Adds an item to a player's inventory. If there is no room for the item, it is dropped at the player's feet.
+     * @param player the player to give an item
+     * @param item the item to be given
+     */
+    public static void giveItemSafely(Player player, ItemStack item) {
+        for (ItemStack remaining : player.getInventory().addItem(item).values()) player.getWorld().dropItem(player.getLocation(), remaining);
     }
 
 }
