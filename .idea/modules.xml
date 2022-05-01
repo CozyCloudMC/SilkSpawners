@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SilkSpawners.iml" filepath="$PROJECT_DIR$/.idea/SilkSpawners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SilkSpawners.iml" filepath="$PROJECT_DIR$/SilkSpawners.iml" />
     </modules>
   </component>
 </project>
